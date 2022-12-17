@@ -17,12 +17,10 @@ server.use(express.json());
 // Respond only on POST /broadcast route
 server.post("/broadcast", (req, res) => {
   if (!req.body || !req.body.message || req.body.message.len < 2) {
-    res
-      .status(400)
-      .json({
-        error:
-          "Expecting valid JSON body with 'message' property with length of minimum 2 characters.",
-      });
+    res.status(400).json({
+      error:
+        "Expecting valid JSON body with 'message' property with length of minimum 2 characters.",
+    });
   } else {
     assistant
       .cast(req.body.message)
