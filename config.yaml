@@ -1,0 +1,30 @@
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+auth_api: true
+description: Broadcast to your Google Homes
+hassio_api: true
+hassio_role: manager
+homeassistant: 2022.12.0
+homeassistant_api: true
+host_network: true
+ingress: true
+ingress_port: 0
+ingress_stream: true
+init: false
+map:
+  - ssl
+name: Google Assistant Broadcast
+panel_icon: mdi:sitemap
+ports:
+  80/tcp: 1880
+ports_description:
+  80/tcp: Web interface
+
+slug: google-broadcast
+uart: true
+url: https://github.com/Apipa169/google-assistant-broadcast
+version: 0.0.1
