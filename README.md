@@ -1,6 +1,7 @@
 # google-assistant-broadcast
 
 [![Docker Image CI](https://github.com/ismarslomic/google-assistant-broadcast/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/ismarslomic/google-assistant-broadcast/actions/workflows/docker-image.yml)
+
 > Run tiny web server which expose REST Api for sending broadcast text messages to
 > your Google Assistant, by using
 > the [Google Assistant Service](https://developers.google.com/assistant/sdk/overview#google_assistant_service).
@@ -58,8 +59,8 @@ or `docker-compose` file and send the `POST` request
   read [Get Docker](https://docs.docker.com/get-docker/) for more information.
 - **Google OAuth 2.0 Client ID** and **Access Keys** - in order to authenticate yourself and get access to your Google
   Assistant
-    - You can find help and more information
-      at [ismarslomic/google-assistant-oauth](https://github.com/ismarslomic/google-assistant-oauth)
+  - You can find help and more information
+    at [ismarslomic/google-assistant-oauth](https://github.com/ismarslomic/google-assistant-oauth)
 
 ### Alt 1: Run docker container with `docker-compose`
 
@@ -68,7 +69,7 @@ Create a sub folder, ie `/home/pi/config`, and add files `client_secret.json` an
 `docker-compose.yml`
 
 ```yaml
-version: '3.8'
+version: "3.8"
 services:
   google-assistant-broadcast:
     container_name: google-assistant-broadcast
