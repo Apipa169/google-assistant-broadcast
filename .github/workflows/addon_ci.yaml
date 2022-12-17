@@ -1,0 +1,10 @@
+---
+name: CI
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+
+jobs:
+  workflows:
+    uses: hassio-addons/workflows/.github/workflows/addon-ci.yaml@main
